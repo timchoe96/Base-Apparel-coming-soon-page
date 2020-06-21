@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.girl1{
+    position:absolute;
+    bottom:0;
+    right:0;
+    height:100vh;
+    width:auto;
+    z-index:2;
+}
+.girl2{
+    display:none;
+}
+
+.logo{
+   position:absolute;
+   left:150px;
+   top:50px;
+   z-index:2;
+}
+
+section{
+    padding-top:200px;
+    padding-left:150px;
+    padding-right:280px;
+    font-family:'Josefin Sans',sans-serif;
+    width:59.5vw;
+    position:absolute;
+    height:100vh;
+    background-image:url('bg-pattern-desktop.svg');
+    background-size:100% auto;
+}
+
+
+h1{
+    font-size:60px;
+}
+
+p{
+   
+    line-height:2;
+    margin-top:20px;
+}
+
+::placeholder{
+    color:hsl(0, 36%, 70%);
+    font-family:'Josefin Sans',sans-serif;
+
+}
+
+.inputText{
+    width:25vw;
+    height:50px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius:40px;
+    margin-top:50px;  
+}
+
+
+.arrow{
+    background:hsl(0, 86%, 77%);
+    height:50px;
+    width:90px;
+    border-radius:30px;
+    border:none;
+    padding:15px 40px;
+    margin-left:-50px;
+    box-shadow: 5px 5px 20px -10px hsl(0, 6%, 24%);
+    &:hover{
+     background:hsl(0, 78%, 85%);
+    }
+    &:focus{
+        outline:none;
+    }  
+}
+
+.emailContainer{
+    display:flex;
+    align-items: flex-end;
+   
+}
+.errorImage{
+    margin-left:-130px;
+    margin-bottom:13px;
+   
+}
+
+.errorMessage{
+    font-size:12px;
+    margin-left:20px;
+    margin-top:5px;
+}
+.textField{
+height:48px;
+width:20vw;
+margin-left: 20px;
+border:none;
+&:focus{
+    outline:none;
+}  
+}
+
+
+
+@media only screen and (max-width:375px){
+  .logo{
+      position:static;
+      margin-left:20px;
+      margin-top:30px;
+      margin-bottom:30px;
+      width:120px;
+      height:auto;
+  }
+     .girl1{
+         display:none;
+        }
+    .girl2{
+        display:block;
+        z-index:2;
+        }
+    section{
+
+        padding-top:0;
+    padding-left:0;
+    padding-right:0;
+    height:50vh;
+    width:100vw;
+    text-align: center;
+    
+    background-size:100% 100%;
+    h1{
+        font-size:40px;
+    }
+    p{
+        padding:0 10px;
+    }
+    }
+    .inputText{
+        width:80vw;
+        margin-left:20px;
+    }
+    .arrow{
+        width:60px;
+        padding:15px 25px;
+    }
+    .firstHead{
+        margin-top: 40px;;
+    }
+    .errorImage{
+        margin-left:-100px;
+        margin-bottom:13px;
+       
+    }
+    
+    .errorMessage{
+        font-size:12px;
+        margin-left:0;
+        margin-right:140px;
+        margin-top:5px;
+    }
+    .textField{
+        width:60vw; 
+        margin-right:50px;
+    }
+}
+
